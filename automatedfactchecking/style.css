@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 50px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.line-height {
+  line-height: 5px;
+  padding-bottom: 10px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.framework {
+  position:relative;
+  text-align:center;
+}
+
+.wireframe {
+  position:relative;
+  text-align:center;
+}
+
+.demo {
+  position:relative;
+  text-align:center;
+}
+
+img {
+  margin: 10px;
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+a {
+	text-decoration: none;
+  padding-top: 0;
+}
+
+#knightlab {
+  padding-top: 25px;
+}
+
+.knightlab {
+  background-color: #222;
+  text-align: center;
+}
+
+.int-pipeline {
+  text-align: center;
+}
+
+.wireframe {
+	text-align: center;
+  /*width: 50%;*/
+}
+
+.screenshot {
+  padding-bottom: 170px;
+}
+
+/*figure-1 {
+  float: right;
+}*/
+
+figcaption {
+  padding-bottom: 10px;
+}
+
+figure-1 {
+  float:left;
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  /*border: thin silver solid;*/
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+
+figure-2 {
+  float:right;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  /*border: thin silver solid;*/
+  margin: 0;
+  padding: 0;
+}
+
+figure-3 {
+  /*float:left;*/
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  /*border: thin silver solid;*/
+  margin: 0;
+  padding: 0;
+}
+
+.vui-v1 {
+  text-align: center;
+}
+
+.prototype1 {
+  text-align: center;
+}
+
+

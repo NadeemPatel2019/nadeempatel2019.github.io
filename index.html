@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initialpscale=1.0">
+  	<title> Nadeem Patel </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- link for back to top button -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> --> 
+    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="font2/flaticon.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<!--  -->
+
+
+  </head>
+
+<body>
+  <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+  <div class="container">
+    <div id="main" class="scroll">
+      <nav>
+      <!-- <img src="x.png" width="200" height="80"> for top-left logo -->
+        <ul>
+          <li><a href="#main">HOME</a></li><!--
+          --><li><a href="#about">ABOUT</a></li><!--
+          --><li><a href="#resume">RESUME</a></li><!--
+          --><li><a href="#portfolio">PORTFOLIO</a></li><!--
+          --><li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="name">Nadeem Patel</a></h1>
+
+      <h2 class="css-typing">
+          <p>
+            I enjoy...
+          </p>
+          <p>
+            ...writing, designing, creating and...
+          </p>
+          <p>
+            ...exploring. 
+          </p>
+      </h2>
+    </div>
+
+    <section id="about" class="scroll"> 
+      <div class="box">
+        <div class="imgPro">
+          <img src="pro.jpg" alt="pro-pic">
+        </div>
+        <div class="content">
+          <h2>About</h2>
+          <p>Hello, my name is Nadeem. My hometown is Chicago, Illinois. I recently graduated from Northwestern University, where I studied journalism and computer science. Some of my interests are medicine (I was pre-med also), politics, sociology and psychology. During my free time, I enjoy traveling the world, trying new foods and watching movies. I also enjoy playing, watching and analyzing sports. Throughout high school, I played basketball competitively and continue to play today for fun. Just going with the flow and trusting the process!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="resume" class="scroll">
+
+        <div class="box-tl">
+          <div class="content-tl">
+
+            <h2>Resume</h2>
+
+            <b class="subheading">EDUCATION</b> 
+
+            <p>Northwestern University (Sept 2017 - June 2020)</p><!---
+            --><p><i>Medill School of Journalism, Media, Integrated Marketing Communications</i></p><!--
+            --><p><i>Bachelor of Science in Journalism, Minor in Computer Science</i></p>  
+            <!-- <p><tab1></tab1></p> -->
+
+            <p style="padding-top: 5%">
+              <b class="icon-inner-info">SKILLS 
+                <span class="flaticon-info">
+                  <span class="tooltiptext">Click on a skill to learn more!</span>
+                </span>
+              </b>
+            </p>
+
+
+              <!-- <div class="icon-inner">
+                <span class="flaticon-notes" data-toggle="modal" data-target="#myModal"></span>
+                <p>Writing & Reporting</p>
+                
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">                  
+                    
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" style="font-size: 25px">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        
+                      </div>
+                      <div class="modal-body">
+                        
+                        <p>As journalist, I have experience in APA style writing, interviewing dozens of people (experts, analysts, locals, organizers, etc.) and covering a variety of topics (sports, health, environment, social issues, politics). I have done descriptive writing, enterprise stories, data-driven writing, profile pieces and more.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>                    
+                    </div>
+                  </div>
+              </div> -->
+
+               <div class="icon-inner">
+                <span class="flaticon-notes" onclick="togglePopup('popup-1')"></span>
+                <p>Writing & Reporting</p>
+                  <!-- <p class="tooltiptext">Interviewing, notetaking, storytelling</p> -->
+                <div class="popup" id="popup-1">
+                  <div class="overlay"></div>
+                  <div class="content-pop">
+                    <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+                    <h1>Writing & Reporting</h1>
+                    <p>As journalist, I have experience in APA style writing, interviewing dozens of people (experts, analysts, locals, organizers, etc.) and covering a variety of topics (sports, health, environment, social issues, politics). I have done descriptive writing, enterprise stories, data-driven writing, profile pieces, photo essays and more.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-inner">
+                <span class="flaticon-video-camera" onclick="togglePopup('popup-2')"></span>
+                <p>Recording & Editing</p>
+                  <!-- <p class="tooltiptext">Interviewing, notetaking, storytelling</p> -->
+                <div class="popup" id="popup-2">
+                  <div class="overlay"></div>
+                  <div class="content-pop">
+                    <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+                    <h1>Recording & Editing</h1>
+                    <p>Aside from audio and video recording as a journalist, I also enjoy doing this for fun. I help friends and family record videos and share ideas when it comes to the recording and editing process. I believe having too much footage is always better than not having enough, so I always have plenty of B-roll.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-inner">
+                <span class="flaticon-coding" onclick="togglePopup('popup-3')"></span>
+                <p>Programming</p>
+                  <!-- <p class="tooltiptext">Interviewing, notetaking, storytelling</p> -->
+                <div class="popup" id="popup-3">
+                  <div class="overlay"></div>
+                  <div class="content-pop">
+                    <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                    <h1>Programming</h1>
+                    <p>Languages: Python, C++, C, HTML, CSS, JS, SQL, R</p>
+                    <p>Environments: MATLAB, R Studio, Visual Studio, PyCharm CE</p>
+                    <p>OS: Unix, Linux</p>
+                    <p>Other: Terminal/Command-Line, GitHub/Git</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-inner">
+                <span class="flaticon-user-experience" onclick="togglePopup('popup-4')"></span>
+                <p>UX & UI</p>
+                  <!-- <p class="tooltiptext">Interviewing, notetaking, storytelling</p> -->
+                <div class="popup" id="popup-4">
+                  <div class="overlay"></div>
+                  <div class="content-pop">
+                    <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                    <h1>UX & UI</h1>
+                    <p>Part of the development process is understanding the users. Through courses and internships, I learned how to execute proper user testing and implement the user feedback to the interface, which should translate to improved experience. I think the best design usually provides simplicity, ease to use and clarity.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icon-inner">
+                <span class="flaticon-statistics" onclick="togglePopup('popup-5')"></span>
+                <p>Analytics</p>
+                  <!-- <p class="tooltiptext">Interviewing, notetaking, storytelling</p> -->
+                <div class="popup" id="popup-5">
+                  <div class="overlay"></div>
+                  <div class="content-pop">
+                    <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                    <h1>Analytics</h1>
+                    <p>I have always been into sports and while I do not think numbers tell the entire story, I think they do help to break down teams and players. After I realized how analytics can be useful to understand problems and find solutions, I have learned to utilize analytics in my writing, whether it is . I have also learned to web scrape and create other tools (COVID-19 tracker) for the purpose of analytics.</p>
+                  </div>
+                </div>
+              </div>
+ 
+              <p style="padding-top: 25%">Check out my full resume <a href="Resume.pdf" target="_blank" style="color:blue; ">here</a>.</p>
+          </div>       
+        </div>
+
+        <div class="tl-container">
+
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>NU Football</h3>
+               <span>July 2020 - Present</span>
+               <p>Intern</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>Knight Lab</h3>
+               <span>June 2020 - Present</span>
+               <p>Fellow</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>Stats Perform</h3>
+               <span>Jan 2020 - Mar 2020</span>
+               <p>Advanced Analytics/Writing Intern</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>Pure Hoops Media</h3>
+               <span>June 2019 - Jan 2020</span>
+               <p>Writer/Content Developer</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>RotoWire</h3>
+               <span>June 2019 - Aug 2019</span>
+               <p>Writing/Stats Intern</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>Knight Lab</h3>
+               <span>Sept 2018 - June 2019</span>
+               <p>Student Developer</p>
+            </div>
+          </div>
+
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+               <h3>WH Trading</h3>
+               <span>June 2018 - Aug 2018</span>
+               <p>Software Intern</p>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio" class="scroll"> 
+      <div class="box-port">
+          <h2>Portfolio</h2>
+      </div>
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('Journalism')"> Journalism</button>
+              <button class="btn" onclick="filterSelection('Development')"> Development</button>
+              <button class="btn" onclick="filterSelection('UX/UI')"> UX & UI</button>
+              <button class="btn" onclick="filterSelection('Marketing')"> Marketing</button>
+            </div>
+
+            <div id="portContainer" class="grow">
+              <!-- Portfolio Gallery Grid -->
+              <div class="row">
+
+                <div class="column Development UX/UI">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
+                    <a href="watchmework/index.html" target="_blank">
+                      <h4 style="padding-top: 40px">Watch Me Work</h4>
+                      <p style="padding-top: 20px; font-size: 10px">Helps users find documents/sources related to their current work product without ever crafting explicit queries</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column Journalism">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
+                    <a href="https://codepen.io/NadeemPatel/full/gEoRLG" target="_blank">
+                      <h4 style="padding-top: 25px">Blood, Sweat and Tears</h4>
+                      <p style="padding-top: 20px; font-size: 10px">A story covering the lives and small businesses of immigrants from different backgrounds</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column Development UX/UI">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
+                    <a href="automatedfactchecking/index.html" target="_blank">
+                      <h4 style="padding-top: 20px">Automated Fact Checking</h4>
+                      <p style="padding-top: 20px; font-size: 10px">Fact checks news and videos during live time by using multiple technologies such as Google API and Alexa</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column Development UX/UI">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/nature.jpg" alt="Nature" style="width:100%"> -->
+                    <h4 style="padding-top: 40px">Bookslite</h4>
+                    <p style="padding-top: 20px">PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+                
+                <div class="column Journalism Marketing">
+                  <div class="content-port">
+                    <!-- <img src="/w3images/cars1.jpg" alt="Car" style="width:100%"> -->
+                    <a href="https://2kleague.nba.com/game/1221900165pgthcg/" target="_blank">
+                      <h4 style="padding-top: 40px">RotoWire</h4>
+                      <p style="padding-top: 20px; font-size: 10px">One of the few preview and analysis pieces I wrote for the NBA 2k League playoffs (Game Story)</p>
+                  </div>
+                </div>
+                
+                <div class="column Journalism">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
+                    <a href="https://purehoopsmedia.com/nba-goes-international/" target="_blank">
+                      <h4 style="padding-top: 20px">NBA Goes International</h4>
+                      <p style="padding-top: 20px; font-size: 10px">A look at the rise of international talent in the NBA through trends, analytics and culture (Pure Hoops Media)</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="column Journalism Marketing">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/lights.jpg" alt="Lights" style="width:100%"> -->
+                    <a href="statsperform/index.html" target="_blank">
+                      <h4 style="padding-top: 40px">Stats Perform</h4>
+                      <p style="padding-top: 20px; font-size: 10px">Articles I wrote during my internship at Stats Perform using advanced analytics, film and observations</p>
+                    </a>
+                  </div>
+                </div>
+
+<!--                 <div class="column Journalism Marketing">
+                  <span onclick="togglePopup2()"></span>
+                  <div class="content-port">
+                    <h4 style="padding-top: 20px">NBA Goes International</h4>
+                    <p style="padding-top: 20px; font-size: 10px">A look at the rise of international talent in the NBA through trends, analytics and culture (Pure Hoops Media)</p>
+
+                    <div clas s="popup2" id="popup-2">
+                      <div class="overlay2"></div>
+                      <div class="content-pop2">
+                        <div class="close-btn2" onclick="togglePopup2()">&times;</div>
+                        <h1>Title</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="column Development UX/UI">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/nature.jpg" alt="Nature" style="width:100%"> -->
+                    <h4 style="padding-top: 40px">COVID-19</h4>
+                    <p style="padding-top: 20px">PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+
+                <div class="column Development UX/UI">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/nature.jpg" alt="Nature" style="width:100%"> -->
+                    <h4 style="padding-top: 40px">TimelineJS</h4>
+                    <p style="padding-top: 20px">PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+
+                <div class="column Development ">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/nature.jpg" alt="Nature" style="width:100%"> -->
+                    <h4 style="padding-top: 40px">NU Football</h4>
+                    <p style="padding-top: 20px">PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+
+                <div class="column Development ">
+                  <div class="content-port">
+                  <!-- <img src="/w3images/nature.jpg" alt="Nature" style="width:100%"> -->
+                    <h4 style="padding-top: 40px">My Travels</h4>
+                    <p style="padding-top: 20px">PAGE UNDER CONSTRUCTION (photography)</p>
+                  </div>
+                </div>
+
+                <!-- <div class="column people">
+                  <div class="content-port">
+                    <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+                    <h4>COVID-19</h4>
+                    <p>PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+                
+                <div class="column people">
+                  <div class="content-port">
+                  <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+                    <h4>TimelineJS</h4>
+                    <p>PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div>
+
+                <div class="column people">
+                  <div class="content-port">
+                  <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+                    <h4>NU Football</h4>
+                    <p>PAGE UNDER CONSTRUCTION</p>
+                  </div>
+                </div> -->
+
+              </div>
+              <!-- END GRID -->
+    </section>
+
+    <section id="contact" class="scroll">
+
+            <div class="box-port">
+              <!-- <div class="content-port"> -->
+
+                <h2>Contact</h2>
+                <!-- <div class="contact-box">
+                  <form>
+                    <input type="text" class="input-field" placeholder="Ful Name">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <input type="text" class="input-field" placeholder="Topic">
+                    <textarea type="text" class="input-field textarea-field" placeholder="Message"></textarea>
+                    <button type="button" class="btn-contact">Send Message</button>
+                  </form>
+                </div> -->
+
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5745424.730235874!2d-89.39480642062661!3d40.48644190899937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1597818552291!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="contact-info">
+                  <div class="icon-inner2">
+                    <span class="flaticon-gmail"></span>
+                    <p>nadeemp.101@gmail.com or nadeempatel2019@u.northwestern.edu</p>
+                    <br>
+                    <span class="flaticon-telephone"></span>
+                    <p>773-574-8342</p>
+                    <br>
+                    <span class="flaticon-linkedin"></span>
+                    <br>
+                    <a href="https://www.linkedin.com/in/nadeem-patel/" target="_blank" style="color:blue; ">LinkedIn</a>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="text-align: center">© 2020 Nadeem Patel</p>
+                  </div>
+                </div>
+
+                <!-- <div class="footer">
+                  <br>
+                  <p>© 2020 Nadeem Patel</p>
+                </div> -->
+            </div>
+    </section>
+
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
