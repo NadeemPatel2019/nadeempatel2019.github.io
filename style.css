@@ -88,6 +88,25 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+@media(max-width: 750px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    /*background-color: #0009;*/
+    background-color: #fff;
+    /*opacity: 0.9; another option for transparency but makes text less visible*/
+    line-height: 30px;
+    z-index: 99;
+  }
+
+  nav ul {
+    float: left;
+    /*margin-right: 30px;*/
+    /*text-align: center;*/
+    font-size: 12px;
+  }
+}
 
 /* HOME NAME */
 
@@ -703,7 +722,7 @@ p {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
   display: none; /* Hide all elements by default */
 }
 
@@ -718,7 +737,7 @@ p {
 /* Content */
 .content-port {
   height: 100px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   background-color: lightgray;
   transition: transform .2s; /* Animation */
@@ -732,6 +751,32 @@ p {
   cursor: pointer;
   position: absolute;
   transform: scale(1.1, 1);
+}
+
+@media(max-width: 750px) {
+  .content-port {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: lightgray;
+    transition: transform .2s; /* Animation */
+    overflow:hidden;
+  }
+
+  .content-port:hover {
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  background-color: darkgray;
+  cursor: pointer;
+  position: absolute;
+  transform: scale(1.1, 1);
+}
+
+  h4 {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 /* The "show" class is added to the filtered elements */
