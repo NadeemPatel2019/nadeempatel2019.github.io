@@ -422,8 +422,8 @@ nav ul li a:hover {
 
 .tl-container {
    width: 30%;
-   height: 100vh;
-   padding: 50px 0;
+   height: 90vh;
+   padding: 15px 0;
    margin: 0;
    /*margin: 50px auto;*/
    /*position: relative;*/
@@ -458,6 +458,7 @@ nav ul li a:hover {
    -moz-box-pack: justify;
    justify-content: space-between;
    clear: both;
+   height: 10%;
 }
 
 .timeline-block-right {
@@ -466,7 +467,7 @@ nav ul li a:hover {
 
 .timeline-block-left {
    float: left;
-   direction: rtl
+   direction: rtl;
 }
 
 .marker {
@@ -488,19 +489,19 @@ nav ul li a:hover {
 
 .timeline-content h3 {
    margin-top: 5px;
-   margin-bottom: 5px;
-   font-size: 15px;
+   margin-bottom: 0.5px;
+   font-size: 13px;
    font-weight: 500
 }
 
 .timeline-content span {
-   font-size: 13px;
+   font-size: 12px;
    color: #a4a4a4;
 }
 
 .timeline-content p {
-   font-size: 12px;
-   line-height: 1.5em;
+   font-size: 11px;
+   line-height: 1.0em;
    word-spacing: 1px;
    color: #888;
 }
@@ -553,10 +554,12 @@ p {
 }
 
 .icon-inner {
-  width: 120px;
-  /*height: 40vh;*/
+  width: 150px;
+  height: 11vh;
   float: left;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-left: 10px;
   text-align: center;
   /*position: relative;*/
   border-radius: 50%;
@@ -607,7 +610,7 @@ p {
 .icon-inner-info .tooltiptext {
   visibility: hidden;
   width: 400px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -626,7 +629,7 @@ p {
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent black transparent transparent;
+  border-color: transparent rgb(0, 0, 0) transparent transparent;
 }
 
 .icon-inner-info:hover .tooltiptext {
@@ -646,13 +649,13 @@ p {
 }
 
 .popup .content-pop {
-  position:absolute;
+  position:fixed;
   top:50%;
   left:50%;
   transform: scale(0);
   background:#fff;
   width:500px;
-  height:250px;
+  height:auto;
   z-index:2;
   text-align:left;
   padding:20px;
@@ -991,4 +994,21 @@ form {
   } 
 }
 
+
+/* Icons */
+
+/* Common styles for image-based icons */
+.icon-image {
+  width: 40px;
+  height: 44px;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for image-based icons */
+.icon-image:hover {
+  filter: grayscale(0%) brightness(0) sepia(100%) hue-rotate(195deg) saturate(200%) contrast(100%);
+  transform: scale(1.1);
+}
 

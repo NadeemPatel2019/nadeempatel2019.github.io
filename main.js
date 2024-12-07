@@ -117,6 +117,10 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+function togglePopup(popupId) {
+  const popup = document.getElementById(popupId);
+  popup.classList.toggle("active");
+}
 
 
 // ----------------------------
