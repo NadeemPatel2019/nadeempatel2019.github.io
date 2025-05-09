@@ -90,35 +90,35 @@ export const blogPosts: BlogPost[] = [
 export const resumeItems: ResumeItem[] = [
   {
     id: 1,
-    title: "Senior Developer Advocate",
-    company: "Notable Tech Company",
-    duration: "2023 - Present",
+    title: "Programmer Writer II, AI/ML & Code Services",
+    company: "Amazon Web Services (AWS)",
+    duration: "April 2022 - Present",
     description: [
-      "Lead developer relations initiatives across AI, cloud, and data science products",
-      "Created technical content including documentation, tutorials, and video series",
-      "Represented the company at 15+ industry conferences globally"
+      "Collaborate with engineers, designers, and product teams to develop and maintain technical documentation, UI text, and code examples",
+      "Lead content strategy initiatives focused on optimizing documentation through data-driven insights, managing a team of six",
+      "Advocate for users by testing features, providing feedback, and using version control (Git) to manage documentation as code"
     ]
   },
   {
     id: 2,
-    title: "Technical Writer & Content Strategist",
-    company: "Cloud Provider",
-    duration: "2021 - 2023",
+    title: "Technical Writer",
+    company: "Saggezza",
+    duration: "August 2021 - March 2022",
     description: [
-      "Developed comprehensive documentation for cloud infrastructure products",
-      "Redesigned the developer portal increasing engagement by 45%",
-      "Collaborated with engineering teams to improve API documentation"
+      "Documented and edited technical content for internal tools and services used by developers and engineers",
+      "Uplifted content from Confluence to edit, structure, and publish to official internal documentation source for over 120 guides",
+      "Used GitLab, Markdown and VS Code to review, edit, and publish documentation as code"
     ]
   },
   {
     id: 3,
-    title: "Documentation Engineer",
-    company: "Data Science Platform",
-    duration: "2019 - 2021",
+    title: "Digital Producer/Writer/Editor",
+    company: "ABC7 News/WLS-TV",
+    duration: "October 2020 - August 2021",
     description: [
-      "Built automated documentation systems for data science tools",
-      "Created interactive tutorials for complex machine learning workflows",
-      "Managed a team of technical writers across multiple product lines"
+      "Transformed reporter scripts, official statements, and reports into digestible web content, adhering to AP style",
+      "Managed multiple content channels simultaneously including website, mobile app, and social media",
+      "Implemented SEO strategies using analytics tools like Google Trends and Adobe Experience Cloud to optimize content performance"
     ]
   }
 ];

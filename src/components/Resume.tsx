@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">Resume</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey in technical writing and developer advocacy.
+            My professional journey in technical writing and content development.
           </p>
           <div className="w-20 h-1 bg-brand-blue mx-auto mt-4"></div>
         </div>
