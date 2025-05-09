@@ -52,7 +52,7 @@ const Contact = () => {
           <p className="text-gray-300 max-w-2xl mx-auto">
             Have a question or want to work together? Feel free to reach out!
           </p>
-          <div className="w-20 h-1 bg-brand-purple mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-brand-olive mx-auto mt-4"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -61,7 +61,7 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <Mail className="w-6 h-6 text-brand-light-purple mr-4 mt-1" />
+                <Mail className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
                   <h4 className="text-lg font-medium">Email</h4>
                   <p className="text-gray-300">yourname@example.com</p>
@@ -69,7 +69,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <Phone className="w-6 h-6 text-brand-light-purple mr-4 mt-1" />
+                <Phone className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
                   <h4 className="text-lg font-medium">Phone</h4>
                   <p className="text-gray-300">+1 (555) 123-4567</p>
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <MapPin className="w-6 h-6 text-brand-light-purple mr-4 mt-1" />
+                <MapPin className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
                   <h4 className="text-lg font-medium">Location</h4>
                   <p className="text-gray-300">San Francisco, CA</p>
@@ -149,7 +149,7 @@ const Contact = () => {
                     />
                   </div>
                   
-                  <Button className="w-full bg-brand-purple hover:bg-brand-light-purple" type="submit" disabled={isSubmitting}>
+                  <Button className="w-full bg-brand-olive hover:bg-brand-light-olive" type="submit" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>

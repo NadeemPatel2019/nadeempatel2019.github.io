@@ -12,7 +12,7 @@ const Portfolio = () => {
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore my work in technical writing, developer education, and community building.
           </p>
-          <div className="w-20 h-1 bg-brand-purple mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-brand-olive mx-auto mt-4"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -34,14 +34,14 @@ const Portfolio = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
-                    <Badge key={index} variant="outline" className="bg-brand-soft-gray">
+                    <Badge key={index} variant="outline" className="bg-brand-soft-green">
                       {tag}
                     </Badge>
                   ))}
                 </div>
                 <a
                   href={project.link}
-                  className="text-brand-purple hover:text-brand-light-purple font-medium inline-flex items-center transition-colors"
+                  className="text-brand-olive hover:text-brand-light-olive font-medium inline-flex items-center transition-colors"
                 >
                   View Project
                   <svg

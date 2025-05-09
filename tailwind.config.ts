@@ -65,9 +65,9 @@ export default {
 				},
 				brand: {
 					"navy": "#1A1F2C",
-					"purple": "#6E59A5",
-					"light-purple": "#9b87f5",
-					"soft-gray": "#F1F0FB"
+					"olive": "#606C38",
+					"light-olive": "#7F9950",
+					"soft-green": "#F2FCE2"
 				}
 			},
 			borderRadius: {

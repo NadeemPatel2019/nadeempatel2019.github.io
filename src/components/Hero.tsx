@@ -29,7 +29,7 @@ const Hero = () => {
           
           <div className="lg:justify-self-end">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-brand-purple to-brand-light-purple rounded-lg blur-lg opacity-75"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-brand-olive to-brand-light-olive rounded-lg blur-lg opacity-75"></div>
               <div className="relative rounded-lg overflow-hidden animate-fade-in shadow-xl">
                 <img
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"

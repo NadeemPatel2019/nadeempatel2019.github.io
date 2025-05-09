@@ -5,11 +5,11 @@ import { Badge } from "@/components/ui/badge";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="bg-brand-soft-gray section-padding">
+    <section id="about" className="bg-brand-soft-green section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-brand-purple mx-auto"></div>
+          <div className="w-20 h-1 bg-brand-olive mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
