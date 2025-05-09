@@ -13,7 +13,7 @@ const Resume = () => {
           <p className="text-gray-600 max-w-2xl mx-auto">
             My professional journey in technical writing and developer advocacy.
           </p>
-          <div className="w-20 h-1 bg-brand-olive mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-brand-blue mx-auto mt-4"></div>
         </div>
         
         <div className="flex justify-center mb-12">
@@ -34,7 +34,7 @@ const Resume = () => {
                     <h3 className="text-xl font-semibold text-brand-navy">
                       {item.title}
                     </h3>
-                    <p className="text-lg text-brand-olive">{item.company}</p>
+                    <p className="text-lg text-brand-blue">{item.company}</p>
                   </div>
                   <p className="text-gray-500 mt-1 md:mt-0">{item.duration}</p>
                 </div>

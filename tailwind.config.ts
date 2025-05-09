@@ -65,9 +65,9 @@ export default {
 				},
 				brand: {
 					"navy": "#1A1F2C",
-					"olive": "#606C38",
-					"light-olive": "#7F9950",
-					"soft-green": "#F2FCE2"
+					"blue": "#4682B4",          // Changed from olive to steel blue
+					"light-blue": "#5F9DD0",    // Lighter version of steel blue
+					"soft-blue": "#EBF4FA"      // Very light blue for backgrounds
 				}
 			},
 			borderRadius: {
