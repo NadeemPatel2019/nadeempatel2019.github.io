@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,7 +23,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <a href="#" className="text-brand-navy font-display font-bold text-xl">
-              YourName
+              Nadeem Patel
             </a>
           </div>
           

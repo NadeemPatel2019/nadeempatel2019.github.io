@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,26 +21,41 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    try {
+      // Create mailto link with form data
+      const mailtoLink = `mailto:nadeemp.101@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      )}`;
+
+      // Open default email client
+      window.location.href = mailtoLink;
+
+      // Show success message
       toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Email client opened!",
+        description: "Please send the email through your email client to complete the message.",
       });
-      
+
+      // Reset form
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: "",
       });
-      
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error opening your email client. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -64,7 +78,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
                   <h4 className="text-lg font-medium">Email</h4>
-                  <p className="text-gray-300">yourname@example.com</p>
+                  <p className="text-gray-300">nadeemp.101@gmail.com</p>
                 </div>
               </div>
               
@@ -80,7 +94,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
                   <h4 className="text-lg font-medium">Location</h4>
-                  <p className="text-gray-300">San Francisco, CA</p>
+                  <p className="text-gray-300">Chicago, IL</p>
                 </div>
               </div>
             </div>
@@ -149,7 +163,11 @@ const Contact = () => {
                     />
                   </div>
                   
-                  <Button className="w-full bg-brand-olive hover:bg-brand-light-olive" type="submit" disabled={isSubmitting}>
+                  <Button 
+                    className="w-full bg-brand-navy hover:bg-brand-light-blue text-white font-semibold py-3 text-lg shadow-lg" 
+                    type="submit" 
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>

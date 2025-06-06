@@ -1,9 +1,17 @@
-
+import { useState } from "react";
 import { projects } from "@/data/portfolioData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+
   return (
     <section id="portfolio" className="section-padding">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,11 +47,17 @@ const Portfolio = () => {
                     </Badge>
                   ))}
                 </div>
-                <a
-                  href={project.link}
+                <button
+                  onClick={() => setSelectedProject(project)}
                   className="text-brand-olive hover:text-brand-light-olive font-medium inline-flex items-center transition-colors"
                 >
-                  View Project
+                  {project.title === "ABC7 Eyewitness News Coverage" 
+                    ? "View News Coverage" 
+                    : project.title === "AWS Marketing Blog Posts"
+                    ? "View Marketing Blogs"
+                    : project.title === "Stats Perform Sports Analytics"
+                    ? "View Sports Analysis"
+                    : "View Documentation"}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 ml-1"
@@ -58,12 +72,104 @@ const Portfolio = () => {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </a>
+                </button>
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
+
+      <Dialog open={selectedProject !== null} onOpenChange={() => setSelectedProject(null)}>
+        {selectedProject && (
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-brand-navy mb-4">
+                {selectedProject.title}
+              </DialogTitle>
+            </DialogHeader>
+            <div className="mt-4">
+              <p className="text-gray-600 mb-6">{selectedProject.fullDescription || selectedProject.description}</p>
+              
+              {selectedProject.details?.services.map((service) => (
+                service.links.map((link, linkIndex) => (
+                  <div key={linkIndex} className="mb-8">
+                    <h4 className="text-xl font-semibold text-brand-navy mb-4">{link.title}</h4>
+                    <div className="flex items-start gap-6">
+                      <div className="w-2/5">
+                        <img
+                          src={
+                            link.title === "NBA Draft Model Analysis" ? "/images/nbadraft-stats-perform.jpg" :
+                            link.title === "NBA All-Star Game Snubs" ? "/images/allstar-stats-perform.jpg" :
+                            "/images/49ers-vs-Vikings-stats-perform.png"
+                          }
+                          alt={link.title}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
+                      <div className="w-3/5">
+                        <div className="mb-4">
+                          "{link.description}"
+                        </div>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-500 hover:text-blue-700 transition-colors"
+                        >
+                          Read full article
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ))}
+
+              {(selectedProject.title === "AWS Technical Documentation" || selectedProject.title === "AWS Marketing Blog Posts") && (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <p className="text-gray-600 italic">
+                    "Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally."
+                  </p>
+                  <div className="mt-4">
+                    <img 
+                      src="/images/aws.png" 
+                      alt="AWS Logo" 
+                      className="h-12 object-contain"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {selectedProject.title === "ABC7 Eyewitness News Coverage" && (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <p className="text-gray-600 italic">
+                    "ABC 7 is Chicago's source for breaking news, weather and live video. Covering politics, health, traffic and sports for Chicago, the suburbs and northwest Indiana."
+                  </p>
+                  <div className="mt-4">
+                    <img 
+                      src="/images/abc7.png" 
+                      alt="ABC7 Logo" 
+                      className="h-12 object-contain"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {selectedProject.quote && selectedProject.logo && (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <p className="text-gray-600 italic">"{selectedProject.quote}"</p>
+                  <div className="mt-4">
+                    <img 
+                      src={selectedProject.logo}
+                      alt={`${selectedProject.title} Logo`}
+                      className="h-12 object-contain"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+          </DialogContent>
+        )}
+      </Dialog>
     </section>
   );
 };
