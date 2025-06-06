@@ -51,11 +51,7 @@ const Portfolio = () => {
                   onClick={() => setSelectedProject(project)}
                   className="text-brand-olive hover:text-brand-light-olive font-medium inline-flex items-center transition-colors"
                 >
-                  {project.title === "ABC7 Eyewitness News Coverage" 
-                    ? "View News Coverage" 
-                    : project.title === "AWS Marketing Blog Posts"
-                    ? "View Marketing Blogs"
-                    : project.title === "Stats Perform Sports Analytics"
+                  {project.title === "Stats Perform Sports Analytics" 
                     ? "View Sports Analysis"
                     : "View Documentation"}
                   <svg
@@ -88,7 +84,7 @@ const Portfolio = () => {
               </DialogTitle>
             </DialogHeader>
             <div className="mt-4">
-              <p className="text-gray-600 mb-6">{selectedProject.fullDescription || selectedProject.description}</p>
+              <p className="text-gray-600">{selectedProject.fullDescription || ""}</p>
               
               {selectedProject.details?.services.map((service) => (
                 service.links.map((link, linkIndex) => (
@@ -124,47 +120,125 @@ const Portfolio = () => {
                 ))
               ))}
 
-              {(selectedProject.title === "AWS Technical Documentation" || selectedProject.title === "AWS Marketing Blog Posts") && (
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <p className="text-gray-600 italic">
-                    "Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally."
-                  </p>
-                  <div className="mt-4">
-                    <img 
-                      src="/images/aws.png" 
-                      alt="AWS Logo" 
-                      className="h-12 object-contain"
-                    />
+              {selectedProject.title === "AWS Technical Documentation" && (
+                <>
+                  <div className="mb-8">
+                    <p className="text-gray-600">
+                      As a programmer writer, I work with service team members, including engineers, designers, managers, internal and 
+                      external partners and other writers. Through a collaborative effort, I develop, update and maintain technical 
+                      documentation for multiple verticals. I also write and edit UI text (headings, UI strings, error messages, etc.) 
+                      that is intuitive and consistent. Additionally, I review designs and test upcoming features to provide feedback 
+                      as an advocate for customers.
+                    </p>
                   </div>
-                </div>
-              )}
 
-              {selectedProject.title === "ABC7 Eyewitness News Coverage" && (
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <p className="text-gray-600 italic">
-                    "ABC 7 is Chicago's source for breaking news, weather and live video. Covering politics, health, traffic and sports for Chicago, the suburbs and northwest Indiana."
-                  </p>
-                  <div className="mt-4">
-                    <img 
-                      src="/images/abc7.png" 
-                      alt="ABC7 Logo" 
-                      className="h-12 object-contain"
-                    />
-                  </div>
-                </div>
-              )}
+                  <div className="space-y-8">
+                    <div className="mb-8">
+                      <h3 className="text-xl font-semibold text-brand-navy mb-4">Amazon Q Developer</h3>
+                      <div className="space-y-3">
+                        <div>
+                          <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Using Amazon Q Developer on the command line
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/gitlab-with-amazon-q.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            GitLab Duo with Amazon Q
+                          </a>
+                        </div>
+                      </div>
+                    </div>
 
-              {selectedProject.quote && selectedProject.logo && (
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <p className="text-gray-600 italic">"{selectedProject.quote}"</p>
-                  <div className="mt-4">
-                    <img 
-                      src={selectedProject.logo}
-                      alt={`${selectedProject.title} Logo`}
-                      className="h-12 object-contain"
-                    />
+                    <div className="mb-8">
+                      <h3 className="text-xl font-semibold text-brand-navy mb-4">Amazon CodeCatalyst</h3>
+                      <div className="space-y-3">
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/adk/action-development-intro.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Developing workflow actions for Amazon CodeCatalyst (full Developer Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/blueprints.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Set up CodeCatalyst projects with blueprints (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/extensions.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Add functionality to projects with extensions in CodeCatalyst (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/search.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Search for code, issues, projects, and users in CodeCatalyst (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/troubleshooting-search.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Troubleshooting problems with search in CodeCatalyst (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/troubleshooting-extensions.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Troubleshooting problems with extensions (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/userguide/getting-started-project-assistance.html#getting-started-project-assistance-create-apply-bp" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Using Amazon Q to choose a blueprint when creating a project or adding functionality (User Guide)
+                          </a>
+                        </div>
+                        <div>
+                          <a href="https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-billing.html" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             className="text-blue-600 hover:text-blue-800 transition-colors">
+                            Administering billing (Administrator Guide)
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+
+                  {selectedProject.quote && selectedProject.logo && (
+                    <div className="mt-8 pt-8 border-t border-gray-200">
+                      <p className="text-gray-600 italic">"{selectedProject.quote}"</p>
+                      <div className="mt-4">
+                        <img 
+                          src={selectedProject.logo}
+                          alt={`${selectedProject.title} Logo`}
+                          className="h-12 object-contain"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </DialogContent>
