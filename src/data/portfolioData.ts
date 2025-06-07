@@ -339,6 +339,40 @@ export const projects: Project[] = [
   },
   {
     id: 7,
+    title: "Knight Lab Projects",
+    description: "Developed innovative tools for journalism and media at Northwestern University's Knight Lab, including an automated fact-checking system and an AI-powered writing assistant.",
+    image: "/images/cs-journalism.jpg",
+    tags: ["AI/ML", "Natural Language Processing", "Voice UI", "Chrome Extension", "AWS", "Google Cloud", "Technical Innovation", "Journalism Tech"],
+    link: "https://knightlab.northwestern.edu/",
+    details: {
+      services: [
+        {
+          name: "Automated Fact Checking: Real-time Fact Checking with Voice Interface",
+          links: [
+            {
+              title: "",
+              description: "Coming across accurate information while watching the news or a YouTube video may not always be true. Automated Fact Checking utilizes Alexa and Google Fact Check API in order to provide verification while capturing information during real time.",
+              url: "/automated-fact-checking"
+            }
+          ]
+        },
+        {
+          name: "Watch Me Work: AI-Powered Writing Assistant",
+          links: [
+            {
+              title: "",
+              description: "Getting good search results can be easy, but knowing what to search in the first place can be even more difficult. Aside from being bad at putting together effective searches in the context of our work, there is also a lot of friction associated with querying in a new tab. Watch Me Work extracts your document's most important keywords and queires Google, displaying the best results in a sidebar — relevant and actionable links.",
+              url: "/watch-me-work"
+            }
+          ]
+        }
+      ]
+    },
+    quote: "<a href='https://knightlab.northwestern.edu/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 transition-colors'>The Northwestern University Knight Lab</a> is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.",
+    logo: "/images/knightlab-dark.png"
+  },
+  {
+    id: 8,
     title: "Developer Community Platform",
     description: "Built and managed a community platform for developers to share resources and collaborate on projects.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",

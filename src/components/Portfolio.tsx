@@ -57,6 +57,8 @@ const Portfolio = () => {
                     ? "View Marketing Posts"
                     : project.title === "ABC7 Eyewitness News"
                     ? "View News Articles"
+                    : project.title === "Knight Lab Projects"
+                    ? "View Projects"
                     : "View Documentation"}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@ const Portfolio = () => {
                   {selectedProject.title === "Stats Perform Sports Analytics" ? (
                     service.links.map((link, linkIndex) => (
                       <div key={linkIndex} className="mb-8">
-                        <h4 className="text-xl font-semibold text-brand-navy mb-4">{link.title}</h4>
+                        <h4 className="text-xl font-semibold text-brand-navy mb-4 mt-8">{link.title}</h4>
                         <div className="flex items-start gap-6">
                           <div className="w-2/5">
                             <img
@@ -109,7 +111,7 @@ const Portfolio = () => {
                             />
                           </div>
                           <div className="w-3/5">
-                            <div className="mb-4">
+                            <div className="mb-4 text-gray-600">
                               "{link.description}"
                             </div>
                             <a
@@ -124,6 +126,23 @@ const Portfolio = () => {
                         </div>
                       </div>
                     ))
+                  ) : selectedProject.title === "Knight Lab Projects" ? (
+                    <>
+                      <h3 className="text-xl font-semibold text-brand-navy mb-4">{service.name}</h3>
+                      {service.links.map((link, linkIndex) => (
+                        <div key={linkIndex} className="mb-8">
+                          <p className="text-gray-600 mb-4">{link.description}</p>
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 hover:text-blue-700 transition-colors"
+                          >
+                            Read full project details
+                          </a>
+                        </div>
+                      ))}
+                    </>
                   ) : (
                     <>
                       <h3 className="text-xl font-semibold text-brand-navy mb-4">{service.name}</h3>
@@ -254,7 +273,7 @@ const Portfolio = () => {
                 </>
               )}
 
-              {selectedProject.quote && selectedProject.logo && (
+              {selectedProject.quote && selectedProject.logo && selectedProject.title !== "Knight Lab Projects" && (
                 <div className="mt-8 pt-8 border-t border-gray-200">
                   <p className="text-gray-600 italic" dangerouslySetInnerHTML={{ __html: selectedProject.quote }}></p>
                   <div className="mt-4">
@@ -265,6 +284,23 @@ const Portfolio = () => {
                     />
                   </div>
                 </div>
+              )}
+
+              {selectedProject.title === "Knight Lab Projects" && (
+                <>
+                  <div className="mt-8 pt-8 border-t border-gray-200">
+                    <p className="text-gray-600 italic">
+                      The Northwestern University <a href="https://knightlab.northwestern.edu/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors">Knight Lab</a> is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.
+                    </p>
+                  </div>
+                  <div className="mt-8 bg-black p-8 rounded-lg">
+                    <div className="flex justify-center space-x-8">
+                      <img src="/images/knightlab-dark.png" alt="Knight Lab" className="h-12" />
+                      <img src="/images/logo-medill-dark.png" alt="Medill School" className="h-12" />
+                      <img src="/images/logo-mccormick-dark.png" alt="McCormick School" className="h-12" />
+                    </div>
+                  </div>
+                </>
               )}
             </div>
           </DialogContent>
