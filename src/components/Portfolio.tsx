@@ -55,6 +55,8 @@ const Portfolio = () => {
                     ? "View Sports Analysis"
                     : project.title === "AWS Marketing Blog Posts"
                     ? "View Marketing Posts"
+                    : project.title === "ABC7 Eyewitness News"
+                    ? "View News Articles"
                     : "View Documentation"}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,10 +91,10 @@ const Portfolio = () => {
               <p className="text-gray-600">{selectedProject.fullDescription || ""}</p>
               
               {selectedProject.details?.services.map((service) => (
-                service.links.map((link, linkIndex) => (
-                  <div key={linkIndex} className="mb-8">
-                    {selectedProject.title === "Stats Perform Sports Analytics" ? (
-                      <>
+                <div key={service.name} className="mb-8">
+                  {selectedProject.title === "Stats Perform Sports Analytics" ? (
+                    service.links.map((link, linkIndex) => (
+                      <div key={linkIndex} className="mb-8">
                         <h4 className="text-xl font-semibold text-brand-navy mb-4">{link.title}</h4>
                         <div className="flex items-start gap-6">
                           <div className="w-2/5">
@@ -120,21 +122,28 @@ const Portfolio = () => {
                             </a>
                           </div>
                         </div>
-                      </>
-                    ) : (
-                      <div className="space-y-3">
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-800 transition-colors"
-                        >
-                          {link.title}
-                        </a>
                       </div>
-                    )}
-                  </div>
-                ))
+                    ))
+                  ) : (
+                    <>
+                      <h3 className="text-xl font-semibold text-brand-navy mb-4">{service.name}</h3>
+                      <div className="space-y-3">
+                        {service.links.map((link, linkIndex) => (
+                          <div key={linkIndex}>
+                            <a
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-600 hover:text-blue-800 transition-colors"
+                            >
+                              {link.title}
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
               ))}
 
               {selectedProject.title === "AWS Technical Documentation" && (
