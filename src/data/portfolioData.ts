@@ -46,7 +46,7 @@ export const projects: Project[] = [
     image: "/images/tech-doc.png",
     tags: ["Technical Writing", "Documentation", "AWS", "API Documentation", "DevOps", "Cloud", "UI/UX Writing", "AI/ML", "Developer Education", "Content Strategy"],
     link: "https://docs.aws.amazon.com/",
-    quote: "Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
+    quote: "<a href='https://docs.aws.amazon.com/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 transition-colors'>Amazon Web Services (AWS)</a> is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
     logo: "/images/aws.png"
   },
   {
@@ -85,7 +85,7 @@ export const projects: Project[] = [
         }
       ]
     },
-    quote: "<a href='https://docs.aws.amazon.com/' target='_blank' rel='noopener noreferrer'>Amazon Web Services (AWS)</a> is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
+    quote: "<a href='https://docs.aws.amazon.com/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 transition-colors'>Amazon Web Services (AWS)</a> is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
     logo: "/images/aws.png"
   },
   {
@@ -278,7 +278,7 @@ export const projects: Project[] = [
         }
       ]
     },
-    quote: "<a href='https://abc7chicago.com/' target='_blank' rel='noopener noreferrer'>ABC 7</a> is Chicago's source for breaking news, weather and live video. Covering politics, health, traffic and sports for Chicago, the suburbs and northwest Indiana.",
+    quote: "<a href='https://abc7chicago.com/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 transition-colors'>ABC 7</a> is Chicago's source for breaking news, weather and live video. Covering politics, health, traffic and sports for Chicago, the suburbs and northwest Indiana.",
     logo: "/images/abc7.png"
   },
   {
@@ -318,7 +318,7 @@ export const projects: Project[] = [
         }
       ]
     },
-    quote: "<a href='https://www.statsperform.com/' target='_blank' rel='noopener noreferrer'>Stats Perform</a> unlocks what was once immeasurable in sport by combining trusted sports data and storytelling capabilities with our AI innovation center.",
+    quote: "<a href='https://www.statsperform.com/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 transition-colors'>Stats Perform</a> unlocks what was once immeasurable in sport by combining trusted sports data and storytelling capabilities with our AI innovation center.",
     logo: "/images/stats-perform.png"
   },
   {
