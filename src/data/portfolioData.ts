@@ -50,6 +50,45 @@ export const projects: Project[] = [
     logo: "/images/aws.png"
   },
   {
+    id: 2,
+    title: "AWS Marketing Blog Posts",
+    description: "Author marketing blog posts and announcements for AWS services, focusing on new feature releases and service updates.",
+    image: "/images/aws-marketing.jpg",
+    tags: ["Technical Writing", "Marketing", "AWS", "Blog Posts", "Feature Announcements", "Cloud", "Developer Education", "Content Strategy"],
+    link: "https://aws.amazon.com/blogs/",
+    details: {
+      services: [
+        {
+          name: "Blog Posts",
+          links: [
+            {
+              title: "Amazon CodeCatalyst now allows conversion of source repositories to custom blueprints",
+              url: "https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-codecatalyst-conversion-source-repositories-custom-blueprints/"
+            },
+            {
+              title: "Amazon CodeCatalyst now supports GitHub Cloud and Bitbucket Cloud with Amazon Q",
+              url: "https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-codecatalyst-github-cloud-bitbucket-cloud-q/"
+            },
+            {
+              title: "CodeCatalyst allows customers to use Amazon Q Developer to choose a blueprint",
+              url: "https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-codecatalyst-amazon-q-blueprint/"
+            },
+            {
+              title: "Amazon CodeCatalyst now supports Bitbucket Cloud source code repositories",
+              url: "https://aws.amazon.com/about-aws/whats-new/2024/06/amazon-codecatalyst-bitbucket-cloud-source-code-repositories/"
+            },
+            {
+              title: "Introducing the AWS PDK blueprints in Amazon CodeCatalyst",
+              url: "https://aws.amazon.com/about-aws/whats-new/2024/04/aws-pdk-blueprints-amazon-codecatalyst/"
+            }
+          ]
+        }
+      ]
+    },
+    quote: "<a href='https://docs.aws.amazon.com/' target='_blank' rel='noopener noreferrer'>Amazon Web Services (AWS)</a> is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally.",
+    logo: "/images/aws.png"
+  },
+  {
     id: 4,
     title: "Stats Perform Sports Analytics",
     description: "Authored data-driven sports articles analyzing player performance, game statistics, and predictive models across NBA and NFL.",
@@ -86,7 +125,7 @@ export const projects: Project[] = [
         }
       ]
     },
-    quote: "Stats Perform unlocks what was once immeasurable in sport by combining trusted sports data and storytelling capabilities with our AI innovation center.",
+    quote: "<a href='https://www.statsperform.com/' target='_blank' rel='noopener noreferrer'>Stats Perform</a> unlocks what was once immeasurable in sport by combining trusted sports data and storytelling capabilities with our AI innovation center.",
     logo: "/images/stats-perform.png"
   },
   {

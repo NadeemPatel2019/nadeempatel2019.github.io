@@ -53,6 +53,8 @@ const Portfolio = () => {
                 >
                   {project.title === "Stats Perform Sports Analytics" 
                     ? "View Sports Analysis"
+                    : project.title === "AWS Marketing Blog Posts"
+                    ? "View Marketing Posts"
                     : "View Documentation"}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,33 +91,48 @@ const Portfolio = () => {
               {selectedProject.details?.services.map((service) => (
                 service.links.map((link, linkIndex) => (
                   <div key={linkIndex} className="mb-8">
-                    <h4 className="text-xl font-semibold text-brand-navy mb-4">{link.title}</h4>
-                    <div className="flex items-start gap-6">
-                      <div className="w-2/5">
-                        <img
-                          src={
-                            link.title === "NBA Draft Model Analysis" ? "/images/nbadraft-stats-perform.jpg" :
-                            link.title === "NBA All-Star Game Snubs" ? "/images/allstar-stats-perform.jpg" :
-                            "/images/49ers-vs-Vikings-stats-perform.png"
-                          }
-                          alt={link.title}
-                          className="w-full h-auto rounded-lg"
-                        />
-                      </div>
-                      <div className="w-3/5">
-                        <div className="mb-4">
-                          "{link.description}"
+                    {selectedProject.title === "Stats Perform Sports Analytics" ? (
+                      <>
+                        <h4 className="text-xl font-semibold text-brand-navy mb-4">{link.title}</h4>
+                        <div className="flex items-start gap-6">
+                          <div className="w-2/5">
+                            <img
+                              src={
+                                link.title === "NBA Draft Model Analysis" ? "/images/nbadraft-stats-perform.jpg" :
+                                link.title === "NBA All-Star Game Snubs" ? "/images/allstar-stats-perform.jpg" :
+                                "/images/49ers-vs-Vikings-stats-perform.png"
+                              }
+                              alt={link.title}
+                              className="w-full h-auto rounded-lg"
+                            />
+                          </div>
+                          <div className="w-3/5">
+                            <div className="mb-4">
+                              "{link.description}"
+                            </div>
+                            <a
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-500 hover:text-blue-700 transition-colors"
+                            >
+                              Read full article
+                            </a>
+                          </div>
                         </div>
+                      </>
+                    ) : (
+                      <div className="space-y-3">
                         <a
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 hover:text-blue-700 transition-colors"
+                          className="text-blue-600 hover:text-blue-800 transition-colors"
                         >
-                          Read full article
+                          {link.title}
                         </a>
                       </div>
-                    </div>
+                    )}
                   </div>
                 ))
               ))}
@@ -225,20 +242,20 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </div>
-
-                  {selectedProject.quote && selectedProject.logo && (
-                    <div className="mt-8 pt-8 border-t border-gray-200">
-                      <p className="text-gray-600 italic">"{selectedProject.quote}"</p>
-                      <div className="mt-4">
-                        <img 
-                          src={selectedProject.logo}
-                          alt={`${selectedProject.title} Logo`}
-                          className="h-12 object-contain"
-                        />
-                      </div>
-                    </div>
-                  )}
                 </>
+              )}
+
+              {selectedProject.quote && selectedProject.logo && (
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <p className="text-gray-600 italic" dangerouslySetInnerHTML={{ __html: selectedProject.quote }}></p>
+                  <div className="mt-4">
+                    <img 
+                      src={selectedProject.logo}
+                      alt={`${selectedProject.title} Logo`}
+                      className="h-12 object-contain"
+                    />
+                  </div>
+                </div>
               )}
             </div>
           </DialogContent>
