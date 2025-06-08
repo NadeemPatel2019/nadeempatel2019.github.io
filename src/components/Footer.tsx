@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-display font-bold mb-4">Nadeem Patel</h3>
             <p className="text-gray-300 mb-4 max-w-md">
-              Technical writer and developer advocate specializing in AI/ML, data science, and cloud technologies.
+              Technical writer, developer advocate, and data enthusiast specializing in AI/ML, data science, and cloud technologies.
             </p>
             <SocialLinks className="text-white" />
           </div>
@@ -28,11 +28,13 @@ const Footer = () => {
                   Portfolio
                 </a>
               </li>
+              {/* Blog section to be revisited
               <li>
                 <a href="#blog" className="text-gray-300 hover:text-white transition-colors duration-200">
                   Blog
                 </a>
               </li>
+              */}
               <li>
                 <a href="#resume" className="text-gray-300 hover:text-white transition-colors duration-200">
                   Resume

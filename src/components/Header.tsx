@@ -12,7 +12,7 @@ const Header = () => {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Blog", href: "#blog" },
+    // { name: "Blog", href: "#blog" }, // To be revisited
     { name: "Resume", href: "#resume" },
     { name: "Contact", href: "#contact" },
   ];

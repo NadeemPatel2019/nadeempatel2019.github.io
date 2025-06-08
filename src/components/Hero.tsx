@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import SocialLinks from "./SocialLinks";
 
@@ -9,10 +8,10 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight mb-4">
-              Technical Writer & Developer Advocate
+              Programmer Writer & Data Enthusiast
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">
-              Bridging the gap between complex technologies and the people who use them through clear documentation, engaging content, and community building.
+              Technical writer, developer advocate, and data enthusiast specializing in AI/ML, data science, and cloud technologies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -32,7 +31,7 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-brand-blue to-brand-light-blue rounded-lg blur-lg opacity-75"></div>
               <div className="relative rounded-lg overflow-hidden animate-fade-in shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                  src="/images/pro-pic.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

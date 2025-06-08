@@ -82,6 +82,7 @@ const Contact = () => {
                 </div>
               </div>
               
+              {/* Phone section commented out
               <div className="flex items-start">
                 <Phone className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />
                 <div>
@@ -89,6 +90,7 @@ const Contact = () => {
                   <p className="text-gray-300">+1 (555) 123-4567</p>
                 </div>
               </div>
+              */}
               
               <div className="flex items-start">
                 <MapPin className="w-6 h-6 text-brand-light-olive mr-4 mt-1" />

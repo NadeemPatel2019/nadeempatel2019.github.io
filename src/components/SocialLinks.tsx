@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 interface SocialLinksProps {
@@ -9,7 +8,7 @@ const SocialLinks = ({ className = "" }: SocialLinksProps) => {
   return (
     <div className={`flex space-x-4 ${className}`}>
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/NadeemPatel2019"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -18,7 +17,7 @@ const SocialLinks = ({ className = "" }: SocialLinksProps) => {
         <Github size={20} />
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://www.linkedin.com/in/nadeem-patel/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -26,6 +25,7 @@ const SocialLinks = ({ className = "" }: SocialLinksProps) => {
       >
         <Linkedin size={20} />
       </a>
+      {/* Commented out Twitter link as requested
       <a
         href="https://twitter.com/yourusername"
         target="_blank"
@@ -35,6 +35,7 @@ const SocialLinks = ({ className = "" }: SocialLinksProps) => {
       >
         <Twitter size={20} />
       </a>
+      */}
     </div>
   );
 };

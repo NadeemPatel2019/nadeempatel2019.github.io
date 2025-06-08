@@ -18,7 +18,7 @@ const Portfolio = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">Portfolio & Projects</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore my work in technical writing, developer education, and community building.
+            Explore my work in technical writing, journalism, and data science.
           </p>
           <div className="w-20 h-1 bg-brand-olive mx-auto mt-4"></div>
         </div>
@@ -90,11 +90,36 @@ const Portfolio = () => {
               </DialogTitle>
             </DialogHeader>
             <div className="mt-4">
-              <p className="text-gray-600">{selectedProject.fullDescription || ""}</p>
+              {selectedProject.description && 
+                !["AWS Technical Documentation", "AWS Marketing Blog Posts", "Stats Perform Sports Analytics", "ABC7 Eyewitness News", "Data Science Projects", "Knight Lab Projects"].includes(selectedProject.title) && (
+                <p className="text-gray-600 mb-8">{selectedProject.description}</p>
+              )}
+              
+              {selectedProject.fullDescription && (
+                <p className="text-gray-600 mb-8">{selectedProject.fullDescription}</p>
+              )}
               
               {selectedProject.details?.services.map((service) => (
-                <div key={service.name} className="mb-8">
-                  {selectedProject.title === "Stats Perform Sports Analytics" ? (
+                <div key={service.name} className="mt-8">
+                  {selectedProject.title === "Data Science Projects" ? (
+                    <>
+                      <h3 className="text-xl font-semibold text-brand-navy mb-4">{service.name}</h3>
+                      <div className="space-y-3">
+                        {service.links.map((link, linkIndex) => (
+                          <div key={linkIndex}>
+                            <a
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-600 hover:text-blue-800 transition-colors"
+                            >
+                              {link.title}
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  ) : selectedProject.title === "Stats Perform Sports Analytics" ? (
                     service.links.map((link, linkIndex) => (
                       <div key={linkIndex} className="mb-8">
                         <h4 className="text-xl font-semibold text-brand-navy mb-4 mt-8">{link.title}</h4>

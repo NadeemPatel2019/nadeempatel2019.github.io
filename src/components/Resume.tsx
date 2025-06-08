@@ -1,4 +1,3 @@
-
 import { resumeItems } from "@/data/portfolioData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -18,7 +17,7 @@ const Resume = () => {
         
         <div className="flex justify-center mb-12">
           <Button className="btn-primary" asChild>
-            <a href="/resume.pdf" download>
+            <a href="/images/NadeemPatel-Resume.pdf" download>
               <Download className="mr-2 h-4 w-4" />
               Download Full Resume
             </a>
