@@ -59,6 +59,8 @@ const Portfolio = () => {
                     ? "View News Articles"
                     : project.title === "Knight Lab Projects"
                     ? "View Projects"
+                    : project.title === "Data Science Projects"
+                    ? "View Projects"
                     : "View Documentation"}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
