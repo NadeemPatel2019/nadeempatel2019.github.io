@@ -1,6 +1,5 @@
 import React from 'react';
 import { projects } from '../../data/portfolioData';
-import { Link } from 'react-router-dom';
 
 const KnightLabProjects = () => {
   const knightLabProject = projects.find(p => p.title === "Knight Lab Projects");
@@ -26,13 +25,14 @@ const KnightLabProjects = () => {
                   <div key={linkIndex} className="mb-8">
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">{link.title}</h3>
                     <p className="text-gray-600 mb-4">{link.description}</p>
-                    <Link 
-                      to={link.url || '#'} 
+                    <a 
+                      href={link.url || '#'} 
                       className="text-blue-600 hover:text-blue-800 font-medium"
                       target={link.target || "_self"}
+                      rel={link.target === "_blank" ? "noopener noreferrer" : ""}
                     >
                       {link.title || "Read full project details"} →
-                    </Link>
+                    </a>
                   </div>
                 ))}
               </div>
