@@ -161,11 +161,11 @@ const Portfolio = () => {
                           <p className="text-gray-600 mb-4">{link.description}</p>
                           <a
                             href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            target={link.target || "_self"}
+                            rel={link.target === "_blank" ? "noopener noreferrer" : ""}
                             className="text-blue-500 hover:text-blue-700 transition-colors"
                           >
-                            Read full project details
+                            {link.title || "Read full project details"}
                           </a>
                         </div>
                       ))}

@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AutomatedFactChecking from "./pages/projects/automated-fact-checking";
 import WatchMeWork from "./pages/projects/watch-me-work";
+import KnightLabProjects from "./pages/projects/knight-lab";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/automated-fact-checking" element={<AutomatedFactChecking />} />
           <Route path="/watch-me-work" element={<WatchMeWork />} />
+          <Route path="/knight-lab" element={<KnightLabProjects />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

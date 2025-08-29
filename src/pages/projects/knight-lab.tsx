@@ -1,6 +1,6 @@
 import React from 'react';
 import { projects } from '../../data/portfolioData';
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 
 const KnightLabProjects = () => {
   const knightLabProject = projects.find(p => p.title === "Knight Lab Projects");
@@ -27,11 +27,11 @@ const KnightLabProjects = () => {
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">{link.title}</h3>
                     <p className="text-gray-600 mb-4">{link.description}</p>
                     <Link 
-                      href={link.url || '#'} 
+                      to={link.url || '#'} 
                       className="text-blue-600 hover:text-blue-800 font-medium"
-                      target="_blank"
+                      target={link.target || "_self"}
                     >
-                      Read full project details →
+                      {link.title || "Read full project details"} →
                     </Link>
                   </div>
                 ))}
