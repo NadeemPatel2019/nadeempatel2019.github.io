@@ -382,10 +382,10 @@ export const projects: Project[] = [
           name: "Automated Fact Checking: Real-time Fact Checking with Voice Interface",
           links: [
             {
-              title: "",
+              title: "View Project Details",
               description: "Coming across accurate information while watching the news or a YouTube video may not always be true. Automated Fact Checking utilizes Alexa and Google Fact Check API in order to provide verification while capturing information during real time.",
               url: "/automated-fact-checking",
-              target: "_blank"
+              target: "_self"
             }
           ]
         },
@@ -393,10 +393,10 @@ export const projects: Project[] = [
           name: "Watch Me Work: AI-Powered Writing Assistant",
           links: [
             {
-              title: "",
+              title: "View Project Details",
               description: "Getting good search results can be easy, but knowing what to search in the first place can be even more difficult. Aside from being bad at putting together effective searches in the context of our work, there is also a lot of friction associated with querying in a new tab. Watch Me Work extracts your document's most important keywords and queires Google, displaying the best results in a sidebar — relevant and actionable links.",
               url: "/watch-me-work",
-              target: "_blank"
+              target: "_self"
             }
           ]
         }
